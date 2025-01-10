@@ -18,7 +18,12 @@ for base in base_search_url:
 	rt.new_id()
 	#rt.test()
 	r = rt.get(base)
-
+	if r.status_code == 200:
+		print(f"UP - {r.status_code} - {base}")
+		up.write(f"{base}\n")
+	else:
+		print(f"DOWN - {base} ")
+		down.write(f"{base}\n")
 	soup = BeautifulSoup(r.text,"html.parser")
 
 	onion_links = re.findall(r"http://[A-Za-z0-9]{56}.onion",soup.get_text())
@@ -30,10 +35,10 @@ for base in base_search_url:
 			check_url =  rt.get(onion)
 			if check_url.status_code == 200:
 				print(f"UP - {check_url.status_code} - {onion}")
-				up.write(f"{onion}")
+				up.write(f"{onion}\n")
 		except:
 			print(f"DOWN - {onion} ")
-			down.write(f"{onion}")
+			down.write(f"{onion}\n")
 	
 up.close()
 down.close()
