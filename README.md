@@ -89,7 +89,7 @@ pip install -r requirements.txt
      - Password: kali
      - Port: 5432
 
-⚠️ Important Path Configurations
+##⚠️ Important Path Configurations
 Before running the tools, you must update the following paths in the code to match your system:
 
 In scraper.py:
