@@ -89,6 +89,36 @@ pip install -r requirements.txt
      - Password: kali
      - Port: 5432
 
+⚠️ Important Path Configurations
+Before running the tools, you must update the following paths in the code to match your system:
+
+In scraper.py:
+pythonCopy# Change this path to your desired XML output location
+output_path = f"{path}/DarIntelligence/dark-web-info-batch-{batch_num}.xml"
+
+In db_connect.py:
+pythonCopy# Change this path to your base list location
+"{path}/DarIntelligence//base_list.txt"
+
+In converter.py:
+pythonCopy# Update input and output file paths
+"dark-web-info-batch-1.xml"  # Input XML file path
+"dweb1.json"                 # Output JSON file path
+
+
+Recommended Directory Structure
+Copy/your/chosen/path/DarIntelligence/
+├── crawler.py
+├── scraper.py
+├── converter.py
+├── database/
+│   └── db_connect.py
+├── base_list.txt
+├── output/
+│   ├── xml/
+│   └── json/
+└── logs/
+
 ## Safety Best Practices
 
 ### System Security
@@ -215,4 +245,4 @@ Users must understand that dark web research carries inherent risks. The develop
 
 ## License
 
-MIT License
+[Specify your license here]
