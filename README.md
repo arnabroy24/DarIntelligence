@@ -215,4 +215,4 @@ Users must understand that dark web research carries inherent risks. The develop
 
 ## License
 
-[Specify your license here]
+MIT License
