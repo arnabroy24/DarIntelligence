@@ -220,22 +220,6 @@ The system implements comprehensive error handling for:
 - XML parsing errors
 - File I/O operations
 
-## Emergency Contacts
-
-If you encounter illegal content or security threats:
-- Local Law Enforcement: [Add appropriate contact]
-- Cybercrime Reporting: [Add appropriate contact]
-- Project Security Team: [Add appropriate contact]
-
-## Legal Compliance
-- Understand relevant laws and regulations
-- Maintain research documentation
-- Follow ethical research guidelines
-- Obtain necessary permissions
-
-## Contributing
-
-Please follow standard contribution guidelines and maintain thorough documentation of any changes.
 
 ## Liability Disclaimer
 
@@ -243,6 +227,4 @@ THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPL
 
 Users must understand that dark web research carries inherent risks. The developers of this tool assume no responsibility for any damages, losses, or legal issues arising from the use or misuse of this software.
 
-## License
 
-[Specify your license here]
